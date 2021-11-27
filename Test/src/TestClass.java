@@ -16,14 +16,14 @@ int i=0;
 cd.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("samsung");
 cd.findElement(By.xpath("//*[@id=\"nav-search-submit-button\"]")).click();
 cd.manage().timeouts().implicitlyWait(2000,TimeUnit.MILLISECONDS);
-String prod1 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span")).getText();
-String price1 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div/div[2]/div[2]/div/div/div[3]/div[1]/div/div[1]/div[2]/a/span[1]/span[2]/span[2]")).getText();
+String prod1 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/span/div/div/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span")).getText();
+String price1 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/span/div/div/div/div/div[2]/div[2]/div/div/div[3]/div[1]/div/div[1]/div[2]/a/span[1]/span[2]/span[2]")).getText();
 Save(con,prod1,price1);
 String prod2 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div/div[1]/div/span[3]/div[2]/div[4]/div/span/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span")).getText();
 String price2 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div/div[1]/div/span[3]/div[2]/div[4]/div/span/div/div/div[2]/div[2]/div/div/div[3]/div[1]/div/div[1]/div[2]/a/span[1]/span[2]/span[2]")).getText();
 Save(con,prod2,price2);
-String prod3 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span")).getText();
-String price3 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div[2]/div[2]/div/div/div[3]/div[1]/div/div[1]/div[2]/a/span[1]/span[2]/span[2]")).getText();
+String prod3 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div/div[2]/div[2]/div/div/div[1]/h2/a/span")).getText();
+String price3 = cd.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[6]/div/span/div/div/div/div[2]/div[2]/div/div/div[3]/div[1]/div/div[1]/div[2]/a/span[1]/span[2]/span[2]")).getText();
 Save(con,prod3,price3);
 i=search(con,prod1,price1);
 if(i==1)
