@@ -1,0 +1,108 @@
+[main] INFO  EmployeeLogs  - =============Start of Get Call=============
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://18.212.17.202:8088
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 18.212.17.202:8088
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /employees HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /employees HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 18.212.17.202:8088[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /employees HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 18.212.17.202:8088
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Sun, 28 Nov 2021 16:16:50 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json;charset=UTF-8
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Sun, 28 Nov 2021 16:16:50 GMT
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json;charset=UTF-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "10a[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[{"id":1,"firstName":"saurabh","lastName":"oza","salary":1000,"email":"saurabh@abc.com"},{"id":2,"firstName":"only","lastName":"fullstack","salary":2000,"email":"onlyfullstack@abc.com"},{"id":3,"firstName":"abc","lastName":"xyz","salary":1000,"email":"abc@abc.com"}]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@37c36608
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  EmployeeLogs  - =============Start of Get Call=============
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://18.212.17.202:8088
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 18.212.17.202:8088
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /employees HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /employees HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: 18.212.17.202:8088[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /employees HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: 18.212.17.202:8088
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/15.0.2)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Sun, 28 Nov 2021 16:49:08 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json;charset=UTF-8
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Sun, 28 Nov 2021 16:49:08 GMT
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json;charset=UTF-8
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "10a[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[{"id":1,"firstName":"saurabh","lastName":"oza","salary":1000,"email":"saurabh@abc.com"},{"id":2,"firstName":"only","lastName":"fullstack","salary":2000,"email":"onlyfullstack@abc.com"},{"id":3,"firstName":"abc","lastName":"xyz","salary":1000,"email":"abc@abc.com"}]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@37c36608
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
